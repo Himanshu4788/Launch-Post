@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create User Account</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md p-8 bg-zinc-800 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-semibold text-center mb-6">Create User Account</h1>
+    <form action="/register" method="post" class="space-y-4">
+      <input type="text" name="username" placeholder="Username" class="w-full px-4 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="text" name="name" placeholder="Name" class="w-full px-4 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" name="email" placeholder="Email" class="w-full px-4 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="number" name="age" placeholder="Age" class="w-full px-4 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="password" name="password" placeholder="Password" class="w-full px-4 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <div class="flex justify-between">
+        <button type="submit" class="w-full mr-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md">Create Account</button>
+        <a href="/login" class="w-full ml-2 px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-md text-center">Sign In</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
